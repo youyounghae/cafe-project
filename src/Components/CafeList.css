@@ -1,0 +1,17 @@
+.cafes_data {
+  width: 160px;
+  text-align: left;
+  float: left;
+  display: inline-table;
+  margin: 30px 38px 0px 25px;
+  height: 80px;
+}
+
+.cafe_name {
+  margin: 0;
+  width: auto;
+}
+
+.cafe_address {
+  margin: 0;
+}

@@ -1,0 +1,31 @@
+.home {
+  height: 100%;
+}
+
+.logo {
+  text-align: center;
+  height: 90px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  text-align: center;
+}
+
+.left {
+  width: 28%;
+}
+
+.center {
+  align-items: center;
+  width: 45%;
+}
+
+.right {
+  width: 27%;
+}
+.dropbox {
+  display: flex;
+}
