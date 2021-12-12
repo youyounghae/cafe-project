@@ -1,29 +1,30 @@
 const SelectOption = {
   cityOption: [
     { label: "선택하세요", value: 0 },
-    { value: "Seoul", label: "서울특별시" },
-    { value: "Incheon", label: "인천광역시" },
-    { value: "Daejeon", label: "대전광역시" },
-    { value: "Gwangju", label: "광주광역시" },
-    { value: "Daegu", label: "대구광역시" },
-    { value: "Ulsan", label: "울산광역시" },
-    { value: "Busan", label: "부산광역시" },
-    { value: "gyeonggido", label: "경기도" },
-    { value: "Ganwondo", label: "강원도" },
-    { value: "Chungcheongbukdo", label: "충청북도" },
-    { value: "Chungcheongnamdo", label: "충청남도" },
-    { value: "Jeollabukdo", label: "전라북도" },
-    { value: "Jeollanamdo", label: "전라남도" },
-    { value: "Gyeongsangbukdo", label: "경상북도" },
-    { value: "Gyeongsangnamdo", label: "경상남도" },
-    { value: "Jejudo", label: "제주도" },
+    { value: "서울", label: "서울특별시" },
+    { value: "인천", label: "인천광역시" },
+    { value: "대전", label: "대전광역시" },
+    { value: "광주", label: "광주광역시" },
+    { value: "대구", label: "대구광역시" },
+    { value: "울산", label: "울산광역시" },
+    { value: "부산", label: "부산광역시" },
+    { value: "경기도", label: "경기도" },
+    { value: "강원도", label: "강원도" },
+    { value: "충청북도", label: "충청북도" },
+    { value: "충청남도", label: "충청남도" },
+    { value: "전라북도", label: "전라북도" },
+    { value: "전라남도", label: "전라남도" },
+    { value: "경상북도", label: "경상북도" },
+    { value: "경상남도", label: "경상남도" },
+    { value: "제주도", label: "제주도" },
   ],
-  Seoul: [
+  서울: [
+    { label: "선택하세요", value: 0 },
     { value: "강남구", label: "강남구" },
     { value: "강동구", label: "강동구" },
     { value: "강북구", label: "강북구" },
-    { vaue: "강서구", label: "강서구" },
-    { valule: "관악구", label: "관악구" },
+    { value: "강서구", label: "강서구" },
+    { value: "관악구", label: "관악구" },
     { value: "광진구", label: "광진구" },
     { value: "구로구", label: "구로구" },
     { value: "금천구", label: "금천구" },
@@ -45,7 +46,8 @@ const SelectOption = {
     { value: "중구", label: "중구" },
     { value: "중랑구", label: "중랑구" },
   ],
-  Incheon: [
+  인천: [
+    { label: "선택하세요", value: 0 },
     { value: "계양구", label: "계양구" },
     { value: "남구", label: "남구" },
     { value: "남동구", label: "남동구" },
@@ -57,21 +59,24 @@ const SelectOption = {
     { value: "강화군", label: "강화군" },
     { value: "옹진군", label: "옹진군" },
   ],
-  Daejeon: [
+  대전: [
+    { label: "선택하세요", value: 0 },
     { value: "대덕구", label: "대덕구" },
     { value: "동구", label: "동구" },
     { value: "서구", label: "서구" },
     { value: "유성구", label: "유성구" },
     { value: "중구", label: "중구" },
   ],
-  Gwangju: [
+  광주: [
+    { label: "선택하세요", value: 0 },
     { value: "광산구", label: "광산구" },
     { value: "남구", label: "남구" },
     { value: "동구", label: "동구" },
     { value: "북구", label: "북구" },
     { value: "서구", label: "서구" },
   ],
-  Daegu: [
+  대구: [
+    { label: "선택하세요", value: 0 },
     { value: "남구", label: "남구" },
     { value: "달서구", label: "달서구" },
     { value: "동구", label: "동구" },
@@ -81,14 +86,16 @@ const SelectOption = {
     { value: "중구", label: "중구" },
     { value: "달성군", label: "달성군" },
   ],
-  Ulsan: [
+  울산: [
+    { label: "선택하세요", value: 0 },
     { value: "남구", label: "남구" },
     { value: "동구", label: "동구" },
     { value: "북구", label: "북구" },
     { value: "중구", label: "중구" },
     { value: "울주군", label: "울주군" },
   ],
-  Busan: [
+  부산: [
+    { label: "선택하세요", value: 0 },
     { value: "강서구", label: "강서구" },
     { value: "금정구", label: "금정구" },
     { value: "남구", label: "남구" },
@@ -108,7 +115,8 @@ const SelectOption = {
     { value: "", label: "" },
     { value: "", label: "" },
   ],
-  gyeonggido: [
+  경기도: [
+    { label: "선택하세요", value: 0 },
     { value: "고양시", label: "고양시" },
     { value: "광명시", label: "광명시" },
     { value: "과천시", label: "과천시" },
@@ -141,7 +149,8 @@ const SelectOption = {
     { value: "여주군", label: "여주군" },
     { value: "연천군", label: "연천군" },
   ],
-  Ganwondo: [
+  강원도: [
+    { label: "선택하세요", value: 0 },
     { value: "강릉시", label: "강릉시" },
     { value: "동해시", label: "동해시" },
     { value: "삼척시", label: "삼척시" },
@@ -161,7 +170,8 @@ const SelectOption = {
     { value: "화천군", label: "화천군" },
     { value: "횡성군", label: "횡성군" },
   ],
-  Chungcheongbukdo: [
+  충청북도: [
+    { label: "선택하세요", value: 0 },
     { value: "제천시", label: "제천시" },
     { value: "청주시", label: "청주시" },
     { value: "충주시", label: "충주시" },
@@ -175,7 +185,8 @@ const SelectOption = {
     { value: "진천군", label: "진천군" },
     { value: "청원군", label: "청원군" },
   ],
-  Chungcheongnamdo: [
+  충청남도: [
+    { label: "선택하세요", value: 0 },
     { value: "계룡시", label: "계룡시" },
     { value: "공주시", label: "공주시" },
     { value: "논산시", label: "논산시" },
@@ -193,7 +204,8 @@ const SelectOption = {
     { value: "태안군", label: "태안군" },
     { value: "홍성군", label: "홍성군" },
   ],
-  Jeollabukdo: [
+  전라북도: [
+    { label: "선택하세요", value: 0 },
     { value: "군산시", label: "군산시" },
     { value: "김제시", label: "김제시" },
     { value: "남원시", label: "남원시" },
@@ -209,7 +221,8 @@ const SelectOption = {
     { value: "장수군", label: "장수군" },
     { value: "진안군", label: "진안군" },
   ],
-  Jeollanamdo: [
+  전라남도: [
+    { label: "선택하세요", value: 0 },
     { value: "광양시", label: "광양시" },
     { value: "나주시", label: "나주시" },
     { value: "목포시", label: "목포시" },
@@ -233,7 +246,8 @@ const SelectOption = {
     { value: "해남군", label: "해남군" },
     { value: "화순군", label: "화순군" },
   ],
-  Gyeongsangbukdo: [
+  경상북도: [
+    { label: "선택하세요", value: 0 },
     { value: "경산시", label: "경산시" },
     { value: "경주시", label: "경주시" },
     { value: "구미시", label: "구미시" },
@@ -258,7 +272,8 @@ const SelectOption = {
     { value: "청송군", label: "청송군" },
     { value: "칠곡군", label: "칠곡군" },
   ],
-  Gyeongsangnamdo: [
+  경상남도: [
+    { label: "선택하세요", value: 0 },
     { value: "거제시", label: "거제시" },
     { value: "김해시", label: "김해시" },
     { value: "마산시", label: "마산시" },
@@ -280,7 +295,8 @@ const SelectOption = {
     { value: "함양군", label: "함양군" },
     { value: "합천군", label: "합천군" },
   ],
-  Jejudo: [
+  제주도: [
+    { label: "선택하세요", value: 0 },
     { value: "서귀포시", label: "서귀포시" },
     { value: "제주시", label: "제주시" },
     { value: "남제주군", label: "남제주군" },

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./CafeList.css";
+import "../CSS/CafeList.css";
 
 function CafeList({ id, name, address, x, y }) {
   return (
@@ -16,9 +16,9 @@ function CafeList({ id, name, address, x, y }) {
           },
         }}
       >
-        <h4 className="cafe_name">{name}</h4>
+        <h3 className="cafe_name">{name}</h3>
       </Link>
-      <h6 className="cafe_address">{address}</h6>
+      <h5 className="cafe_address">{address}</h5>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { HashRouter, Route } from "react-router-dom";
 import { RenderAfterNavermapsLoaded } from "react-naver-maps";
 import Home from "./Routes/Home";
-import CafeDetailPage from "./Components/CafeDetailPage";
+import CafeDetailPage from "./Components/JS/CafeDetailPage";
 
 function App() {
   return (

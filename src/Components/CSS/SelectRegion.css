@@ -1,0 +1,22 @@
+.select1 {
+  width: 130px;
+  margin: 0 25px 0 15px;
+  display: inline-flex;
+  left: 13%;
+  text-align: center;
+}
+
+.select2 {
+  width: 130px;
+  display: inline-flex;
+  text-align: center;
+  left: 14%;
+}
+
+.css-qc6sy-singleValue {
+  font-size: 14px;
+}
+
+.css-1s2u09g-control {
+  width: 130px;
+}

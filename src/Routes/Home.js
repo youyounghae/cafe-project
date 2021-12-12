@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import SelectRegion from "../Components/SelectRegion";
-import SerchKeyword from "../Components/SerchKeyword";
+import SelectRegion from "../Components/JS/SelectRegion.js";
+import SerchKeyword from "../Components/JS/SerchKeyword.js";
 import "./Home.css";
 
 function Home() {
@@ -10,15 +10,7 @@ function Home() {
         <h1>카페 YouYoungHae</h1>
       </div>
       <div className="main">
-        <div className="left">
-          <div className="dropbox">
-            <SelectRegion />
-          </div>
-        </div>
-        <div className="center">
-          <SerchKeyword />
-        </div>
-        <div className="right"></div>
+        <SelectRegion />
       </div>
     </div>
   );

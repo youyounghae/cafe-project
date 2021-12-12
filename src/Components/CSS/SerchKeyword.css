@@ -1,0 +1,20 @@
+.serch {
+  height: 50px;
+  display: inline;
+  margin-left: 18rem;
+}
+
+.serch_keyword {
+  width: 23em;
+  height: 2em;
+  margin-right: 30px;
+  border-radius: 1em;
+  padding-left: 1em;
+  font-size: 14px;
+}
+
+.cafeList {
+  width: 60%;
+  margin-left: 27em;
+  margin-top: 3em;
+}

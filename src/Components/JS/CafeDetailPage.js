@@ -1,6 +1,6 @@
 import React from "react";
 import { RenderAfterNavermapsLoaded, Marker } from "react-naver-maps";
-import MapAPI from "./Map";
+import MapAPI from "../JS/Map";
 
 function CafeDetailPage({ location: { state }, history }) {
   if (state === undefined) {

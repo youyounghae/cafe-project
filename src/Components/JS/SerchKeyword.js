@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import CafeList from "./CafeList";
-import "./SerchKeyword.css";
+import "../CSS/SerchKeyword.css";
 
 const { kakao } = window;
 
-function SerchKeyword({ cityName }) {
+function SerchKeyword({ cityName, countyName }) {
   const [places, setPlaces] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
@@ -14,7 +14,7 @@ function SerchKeyword({ cityName }) {
 
   const onSubmit = () => {
     setPlaces([]);
-    const ps = new kakao.maps.services.Places();
+    const ps = new window.kakao.maps.services.Places();
 
     const placesSearchDB = (data, status, pagination) => {
       if (status === kakao.maps.services.Status.OK) {
@@ -31,7 +31,15 @@ function SerchKeyword({ cityName }) {
         return;
       }
     };
-    ps.keywordSearch(inputValue + "카페", placesSearchDB);
+    console.log(cityName);
+    if (cityName !== 0 && countyName !== 0) {
+      ps.keywordSearch(
+        cityName + countyName + inputValue + "카페",
+        placesSearchDB
+      );
+    } else if (cityName !== 0 && countyName === 0) {
+      ps.keywordSearch(cityName + inputValue + "카페", placesSearchDB);
+    } else ps.keywordSearch(inputValue + "카페", placesSearchDB);
   };
 
   return (
@@ -47,16 +55,18 @@ function SerchKeyword({ cityName }) {
           submit
         </button>
       </div>
-      {places.map((place) => (
-        <CafeList
-          key={place.id}
-          id={place.id}
-          name={place.place_name}
-          address={place.road_address_name}
-          x={place.x}
-          y={place.y}
-        />
-      ))}
+      <div className="cafeList">
+        {places.map((place) => (
+          <CafeList
+            key={place.id}
+            id={place.id}
+            name={place.place_name}
+            address={place.road_address_name}
+            x={place.x}
+            y={place.y}
+          />
+        ))}
+      </div>
     </>
   );
 }
